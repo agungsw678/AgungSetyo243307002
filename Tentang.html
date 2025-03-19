@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrasi Seminar IT PNM Summit</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      #contact {
+        padding: 40px 0;
+        text-align: center;
+      }
+      #contact h2 {
+        margin-bottom: 20px;
+      }
+      .social-icons {
+        margin-top: 20px;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        color: white;
+        font-size: 1.5em;
+      }
+      footer {
+        background: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="PNM.jpg" alt="Logo PNM" height="40" />
+          Form Registrasi Seminar Teknologi Nasional
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="indext.html"
+              <a class="nav-link active" href="#">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Kontak.html"
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="about"
+      class="text-white text-center py-5"
+      style="
+        background: url('background-seminar.jpg') center/cover no-repeat;
+        position: relative;
+      "
+    >
+      <div
+        class="overlay"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+        "
+      ></div>
+      <div class="container position-relative">
+        <h2 class="display-4">Tentang Seminar IT PNM Summit</h2>
+        <p class="lead">
+            Seminar tahunan yang menghadirkan para ahli dan profesional untuk membahas inovasi terbaru dalam teknologi informasi, membuka wawasan, dan menginspirasi masa depan industri digital! 🚀✨
+        </p>
+        <a href="#" class="btn btn-light mt-3">Pelajari Lebih Lanjut</a>
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <h2 class="text-center">Form Registrasi</h2>
+      <form id="registrationForm" class="p-4 border rounded bg-light">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama Lengkap</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Masukkan email Anda"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">No. Telepon</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Masukkan nomor telepon Anda"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Daftar</button>
+      </form>
+    </div>
+
+    <section id="contact" class="bg-dark text-white">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <p>Email: info@pnm-summit.com</p>
+        <p>Telepon: +62 856 079 51197</p>
+        <div class="social-icons">
+          <a href="#" class="fab fa-facebook"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Agung Setyo W | NIM: 243307002</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Terima kasih telah mendaftar!");
+        });
+    </script>
+  </body>
+</html>
